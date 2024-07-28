@@ -4,11 +4,12 @@
   --neutral-color-20: #F5F5F5;
   --neutral-color-60: #18181D;
   --neutral-color-100: #1d1e25;
+  
+  // container
+  --container-padding: 15px;
+  --container-width: 1200px;
+  
 }
-
-// container
---container-padding: 15px;
---container-width: 1200px;
 
 [data-theme='dark'] {
   --neutral-color-10: #1d1e25;
