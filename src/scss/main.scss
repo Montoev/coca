@@ -1,6 +1,4 @@
 @import './mixins';
-
-header {
-  @include flex-justify-center;
-}
+@import './base';
+@import './globals';
 
