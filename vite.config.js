@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import injectHTML from 'vite-plugin-html-inject';
-import { ViteMinifyPlugin } from 'vite-plugin-minify'
+import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
   root: './src',
