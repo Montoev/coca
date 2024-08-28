@@ -28,5 +28,8 @@
   },
   "overrides": {
     "eslint": "^9.7.0"
+  },
+  "dependencies": {
+    "swiper": "^11.1.10"
   }
 }
