@@ -30,6 +30,7 @@
     "eslint": "^9.7.0"
   },
   "dependencies": {
+    "intl-tel-input": "^18.5.3",
     "swiper": "^11.1.10"
   }
 }
