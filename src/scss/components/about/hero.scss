@@ -1,0 +1,365 @@
+.hero {
+  overflow: hidden;
+  padding-top: 105px;
+
+  @include mini-desktop {
+    padding-top: 90px;
+  }
+
+  &::before {
+    top: 1190px;
+    left: 21px;
+  }
+
+  &::after {
+    top: 1940px;
+    right: 0;
+    overflow: hidden;
+    transform: translateX(-168px);
+  }
+
+  &__title {
+    margin-bottom: 118px;
+    max-width: 959px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    color: var(--neutral-color-100);
+
+    @include mini-desktop {
+      margin-bottom: 100px;
+    }
+
+    @include tablet {
+      margin-bottom: 44px;
+      font-size: 60px;
+    }
+
+    @include small-tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      margin-bottom: 38px;
+      font-size: 48px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 30px;
+      font-size: 38px;
+    }
+  }
+
+  &__subtitle {
+    @include flex-all-between;
+    gap: 30px;
+    margin-bottom: 135px;
+
+    @include tablet {
+      margin-bottom: 105px;
+    }
+
+    &-text {
+      gap: 24px;
+      max-width: 838px;
+
+      @include tablet {
+        font-size: 28px;
+      }
+
+      @include small-tablet {
+        text-align: center;
+      }
+
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+
+    &-link {
+      & svg path,
+      & svg rect,
+      & svg circle {
+        fill: var(--neutral-color-90);
+      }
+
+      @include small-tablet {
+        display: none;
+      }
+    }
+  }
+
+  .text-p-subtitle::before {
+    min-width: 76px;
+    transform: translateY(-85px);
+  }
+
+  &__info {
+    @include flex-all-between;
+    gap: 30px;
+    border-top: 1px solid var(--neutral-color-30);
+    border-bottom: 1px solid var(--neutral-color-30);
+    padding: 80px 0;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      gap: 20px;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    @include mobile {
+      padding: 60px 0;
+    }
+
+    &-title {
+      max-width: 480px;
+      font-weight: 600;
+      letter-spacing: -2px;
+
+      @include tablet {
+        max-width: 700px;
+      }
+    }
+
+    &-descr {
+      max-width: 522px;
+
+      @include mini-desktop {
+        max-width: 450px;
+      }
+
+      @include tablet {
+        max-width: 700px;
+      }
+    }
+  }
+}
+
+.about {
+  &__slider {
+    margin-bottom: 160px;
+    width: 100vw;
+
+    @include tablet {
+      margin-bottom: 100px;
+    }
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 100px;
+      left: 518px;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      transform: translateX(-50%);
+
+      @include tablet {
+        display: none;
+      }
+
+      @include small-mobile {
+        top: 80px;
+        left: 93%;
+        display: flex;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__article {
+    max-width: 502px;
+    max-height: 634px;
+
+    @include mini-desktop {
+      max-width: 482px;
+    }
+
+    @include mobile {
+      max-width: 400px;
+    }
+
+    &-img {
+      margin-bottom: 24px;
+
+      &-3 {
+        width: 506px;
+        height: 460px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 8px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--neutral-color-100);
+    }
+
+    &-descr {
+      margin-bottom: 32px;
+      font-weight: 500;
+      line-height: 32px;
+      color: var(--neutral-color-150);
+    }
+
+    &-btn {
+      border-radius: 100px;
+      padding: 16px 32px;
+      font-weight: 700;
+      line-height: 24px;
+      color: var(--neutral-color-10);
+      background-color: var(--neutral-color-100);
+    }
+  }
+}
+
+.team {
+  padding: 160px 0;
+
+  @include mini-desktop {
+    padding: 130px 0;
+  }
+
+  @include mobile {
+    padding: 90px 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 900px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: var(--neutral-color-100);
+  }
+
+  &__descr {
+    margin-bottom: 80px;
+    max-width: 534px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--neutral-color-150);
+
+    @include tablet {
+    max-width: 900px;
+
+    }
+  }
+
+  &__slider {
+    margin-bottom: 100px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 158px;
+      left: 395px;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      transform: translateX(-50%);
+
+      @include tablet {
+        display: none;
+      }
+
+      @include small-mobile {
+        top: 80px;
+        left: 93%;
+        display: flex;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__article {
+    max-width: 379px;
+
+    &-img {
+      margin-bottom: 16px;
+    }
+
+    &-info {
+      @include flex-justify-between;
+
+      &-person {
+        &-name {
+          margin-bottom: 8px;
+          font-weight: 600;
+          line-height: 36px;
+          color: var(--neutral-color-100);
+        }
+
+        &-profession {
+          font-weight: 500;
+          line-height: 27px;
+          color: var(--neutral-color-150);
+        }
+      }
+
+      &-socials {
+        display: flex;
+        gap: 8px;
+
+        & svg path {
+          fill: var(--neutral-color-90);
+        }
+      }
+    }
+  }
+
+  &__info {
+    @include flex-justify-between;
+    gap: 30px;
+
+    @include tablet {
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    &-title {
+      font-weight: 600;
+      line-height: 67.2px;
+      letter-spacing: -2px;
+      color: var(--neutral-color-100);
+
+      @include tablet {
+        max-width: 600px;
+      }
+    }
+
+    &-descr {
+      max-width: 506px;
+
+      @include tablet {
+        max-width: 700px;
+      }
+    }
+
+    &-text {
+      margin-bottom: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      color: var(--neutral-color-150);
+    }
+
+    &-link {
+      font-weight: 600;
+      line-height: 24px;
+      color: var(--neutral-color-100);
+    }
+  }
+}
