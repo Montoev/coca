@@ -94,6 +94,10 @@
   &__slide {
     max-width: 406px;
 
+    &:nth-child(3) {
+      max-width: 476px;
+    }
+
     &-img {
       margin-bottom: 24px;
     }

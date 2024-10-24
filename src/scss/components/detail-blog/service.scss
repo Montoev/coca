@@ -1,0 +1,147 @@
+.service {
+  padding: 80px 0 160px;
+
+  @include tablet {
+    padding: 60px 0 90px;
+  }
+
+  &__container {
+    max-width: 970px;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    max-width: 970px;
+    font-weight: 700;
+    line-height: 86.4px;
+    letter-spacing: -3px;
+    color: var(--neutral-color-100);
+
+    @include small-tablet {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    @include flex-justify-between;
+    align-items: end;
+    margin-bottom: 24px;
+
+    &-left {
+      @include flex-all-between;
+      gap: 24px;
+
+      &-author {
+        &-name {
+          margin-bottom: 4px;
+          font-weight: 600;
+          line-height: 26px;
+          color: var(--neutral-color-100);
+        }
+
+        &-profession {
+          display: flex;
+          align-items: end;
+          font-weight: 500;
+          line-height: 26px;
+          color: var(--neutral-color-150);
+        }
+      }
+    }
+
+    &-date {
+      font-weight: 500;
+      line-height: 27px;
+      color: var(--neutral-color-150);
+    }
+  }
+
+  &__img {
+    margin-bottom: 80px;
+  }
+
+  &__text {
+    margin-bottom: 56px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--neutral-color-100);
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 48px;
+    color: var(--neutral-color-100);
+  }
+
+  &__author {
+    @include flex-justify-between;
+    gap: 48px;
+
+    @include mobile {
+      @include flex-column;
+    }
+
+    &-avatar {
+      height: 200px;
+    }
+
+    &-card {
+      &-socials {
+        @include flex-align-center;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+        height: 32px;
+
+        @include small-tablet {
+          height: auto;
+        }
+
+        &-item {
+          height: 32px;
+        }
+
+        &-link {
+          display: inline-block;
+          height: 32px;
+          font-weight: 500;
+          line-height: 31px;
+          color: var(--neutral-color-100);
+
+          & path {
+            fill: var(--neutral-color-100);
+          }
+        }
+      }
+
+      &-text {
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--neutral-color-150);
+      }
+
+      &-name {
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 42px;
+        letter-spacing: -1px;
+        color: var(--neutral-color-100);
+      }
+
+      &-profession {
+        margin-bottom: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: var(--neutral-color-150);
+      }
+
+      &-descr {
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--neutral-color-100);
+      }
+    }
+  }
+}
