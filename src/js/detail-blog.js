@@ -6,6 +6,3 @@ import { useBurger } from './components/burger';
 
 useTheme();
 useBurger();
-
-
-

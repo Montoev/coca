@@ -246,8 +246,7 @@
     color: var(--neutral-color-150);
 
     @include tablet {
-    max-width: 900px;
-
+      max-width: 900px;
     }
   }
 

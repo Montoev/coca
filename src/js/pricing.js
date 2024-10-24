@@ -8,4 +8,3 @@ import { usePriceSwitcher } from './components/pricing/priceSwitcher';
 useTheme();
 useBurger();
 usePriceSwitcher();
-
